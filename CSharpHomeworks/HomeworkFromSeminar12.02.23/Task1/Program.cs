@@ -18,10 +18,13 @@ Console.Clear();
 Console.WriteLine("Введите число:");
 int n = int.Parse(Console.ReadLine());
 //
-//while ((n <-999 || n >999) && (n>-100 && n <100))
-while (n<100||n>999)
+while (n <-999 || (n >-100 && n<100) || n >999)
+//while (n<100||n>999)
 {
 Console.WriteLine("Введите трехзначное число:");
 n = int.Parse(Console.ReadLine());
 }
-Console.WriteLine($"{n} -> {(n/10)%10}");
+Console.WriteLine($"{n} -> {Math.Abs((n/10)%10)}");
+
+
+//n<-999 ИЛИ (n>-100 И n<100)  ИЛИ n>999
