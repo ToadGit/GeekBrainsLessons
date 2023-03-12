@@ -7,4 +7,4 @@
 */
 Console.WriteLine("Введите число для проверки:");
 if ((int.Parse(Console.ReadLine())%2)==0)Console.WriteLine("число четное");
-elseConsole.WriteLine("число нечетное");
+else Console.WriteLine("число нечетное");
